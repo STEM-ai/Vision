@@ -47,14 +47,14 @@ def preprocess_train(example_batch):
 
 #def preprocess_train(example_batch):
     """Apply train_transforms across a batch."""
-    processed_images = []
-    for image in example_batch["image"]:
+    #processed_images = []
+    #for image in example_batch["image"]:
         # Ensure image is read correctly into BytesIO
-        image_bytes = BytesIO(image)
-        image = Image.open(image_bytes).convert("RGB")
-        processed_images.append(train_transforms(image))
-    example_batch["pixel_values"] = processed_images
-    return example_batch
+     #   image_bytes = BytesIO(image)
+      #  image = Image.open(image_bytes).convert("RGB")
+        #processed_images.append(train_transforms(image))
+    #example_batch["pixel_values"] = processed_images
+    #return example_batch
 
 
 
